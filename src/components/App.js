@@ -85,7 +85,7 @@ const App = () => {
 						<th>Title</th>
 						<th>Author</th>
 						<th>Publisher</th>
-						<th>Rank</th>
+						<th>ISBN</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -104,7 +104,7 @@ const App = () => {
 							<td>{book.title}</td>
 							<td>{book.author}</td>
 							<td>{book.publisher}</td>
-							<td>{book.rank}</td>
+							<td>{book.primary_isbn10}</td>
 						</tr>
 					))}
 				</tbody>
