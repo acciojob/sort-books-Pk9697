@@ -82,10 +82,10 @@ const App = () => {
 			<table>
 				<thead>
 					<tr>
-						<th>Rank</th>
 						<th>Title</th>
 						<th>Author</th>
 						<th>Publisher</th>
+						<th>Rank</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -101,10 +101,10 @@ const App = () => {
 					)} */}
 					{books.map((book, idx) => (
 						<tr key={`book-${idx}`}>
-							<td>{book.rank}</td>
 							<td>{book.title}</td>
 							<td>{book.author}</td>
 							<td>{book.publisher}</td>
+							<td>{book.rank}</td>
 						</tr>
 					))}
 				</tbody>
