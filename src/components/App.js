@@ -82,6 +82,7 @@ const App = () => {
 			<table>
 				<thead>
 					<tr>
+						<th>Rank</th>
 						<th>Title</th>
 						<th>Author</th>
 						<th>Publisher</th>
@@ -93,13 +94,14 @@ const App = () => {
 							<td colSpan={3}>{error}</td>
 						</tr>
 					)}
-					{status === 'pending' && (
+					{/* {status === 'pending' && (
 						<tr>
 							<td colSpan={3}>Loading...</td>
 						</tr>
-					)}
+					)} */}
 					{books.map((book, idx) => (
 						<tr key={`book-${idx}`}>
+							<td>{book.rank}</td>
 							<td>{book.title}</td>
 							<td>{book.author}</td>
 							<td>{book.publisher}</td>
