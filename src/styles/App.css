@@ -1,1 +1,50 @@
+* {
+	box-sizing: border-box;
+}
 
+body {
+	margin: 0;
+	padding: 1em;
+	background-color: #f6f6f6;
+}
+
+.app {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 1em;
+	border: 1px solid gray;
+	border-radius: 10px;
+}
+
+.app > header {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin-bottom: 1em;
+}
+
+.app label:first-child {
+	margin-right: 0.5em;
+}
+
+.app > table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.app > table th {
+    text-align: left;
+}
+
+.app > table thead tr,
+.app > table tbody tr:not(:last-of-type) {
+	border-bottom: 1px solid gray;
+
+}
+
+.app > table th,
+.app > table td {
+	padding: 0.5em;
+}
