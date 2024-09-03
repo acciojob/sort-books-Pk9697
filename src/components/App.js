@@ -8,14 +8,14 @@ const App = () => {
       <header>
         <h1>Books List</h1>
         <div>
-          <label>Order{' '}
+          <label>Order:{' '}
             <select>
               <option value="title">Title</option>
               <option value="author">Author</option>
               <option value="publisher">Publisher</option>
             </select>
           </label>
-          <label>Sort By{' '}
+          <label>Sort by:{' '}
             <select>
               <option value="asc">Ascending</option>
               <option value="desc">Descending</option>
